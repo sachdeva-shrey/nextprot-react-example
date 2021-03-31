@@ -53,7 +53,6 @@ const EntryData = () => {
       const data = await fetch(
         `https://api.nextprot.org/entry/${inputValue}/${option}.json`
       ).then((res) => res.json());
-      console.log("ddd", data);
       if (data) {
         setIsoforms(data.entry.isoforms);
         setProperties(data.entry.properties);
